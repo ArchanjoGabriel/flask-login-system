@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro PartiuIF</title>
+</head>
+<body>
+    <main>
+        <section class="signin-form">
+            <form action="{{ url_for('login_signin.signin_page') }}" method="POST">
+                <div class="form-title">
+                    <h1>Crie sua conta</h1>
+                </div>
+                <div class="inputs">
+                    <input type="text" name="nome" placeholder="Nome"> <br>
+
+                    <input type="text" name="email" placeholder="Email"> <br>
+
+                    <input type="password" name="senha" placeholder="Senha"> <br>
+                </div>
+
+                <div class="submit">
+                    <button type="submit">Criar conta!</button>
+
+                    <a href="{{ url_for('login_signin.login_page') }}">Já tem uma conta?</a>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

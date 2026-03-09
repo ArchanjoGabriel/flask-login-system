@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boas Vindas</title>
+</head>
+<body>
+    <header>
+        <div class="hello">
+            <h1>Bem vindo {{ usuario_nome }}!</h1>
+        </div>
+
+        <div class="form-logout">
+            <form action="{{ url_for('login_signin.logout_page') }}" method="POST">
+                <button type="submit">Fazer Logout</button>
+            </form>
+        </div>
+    </header>
+</body>
+</html>
